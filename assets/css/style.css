@@ -5,7 +5,9 @@
 html, body {
     margin: 0px;
     min-height: 100%;
-    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");    ;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");   
+    background-size: cover; 
+    /* background-color: red; */
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 } 
 
@@ -18,9 +20,9 @@ html, body {
     top: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     background-color: #ffffff;
-    overflow: hidden;
+    overflow: auto;
     z-index: 99;
     border-bottom: 2px rgba(119, 119, 119, 0.473) solid;
 }
@@ -116,7 +118,7 @@ p {
 }
 
 p a {
-   color: #df9fa1;  
+    color: #df9fa1;  
 }
 
 /* footer */
@@ -243,4 +245,53 @@ textarea {
 .submit {
     margin-bottom: 50px;
     margin-left: 20px;
+}
+
+@media only screen and (max-width:980px) {
+    .nav-right {
+        margin-right: 20px!important;
+    }
+    .wrapper {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .navbar > .nav-header > .kim-logo {
+        margin-left: 50px!important;
+    }
+    .nav-right {
+        margin-right: 20px!important;
+    }
+    .wrapper {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    .navbar {
+        height:150px;
+    }
+
+    .kim-logo {
+        width: 100%;
+    }
+    
+    .navbar nav li {
+        display: block !important;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .navbar nav li:last-child {
+        margin-right: 10px;
+    }
+
+    .wrapper {
+        margin-top: 200px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
 }
