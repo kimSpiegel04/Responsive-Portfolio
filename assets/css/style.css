@@ -22,7 +22,7 @@ html, body {
     margin-right: 5px;
     /* margin-bottom: 20px; */
     background-color: #ffffff;
-    overflow: auto;
+    overflow: hidden;
     z-index: 99;
     border-bottom: 2px rgba(119, 119, 119, 0.473) solid;
 }
